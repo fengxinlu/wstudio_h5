@@ -70,7 +70,7 @@ $(function(){
                 popoverImg.attr({src : 'images/success.png'})
                 resultText.text('领取成功')
                 // resultReason.text('已领取优惠券，即可进入账户查看')
-                resultReason.text('您的优惠码已通过短信发送到您的手机上，请注意查收，登录App兑换优惠券')
+                resultReason.text('您的优惠券已兑换成功，请登录App查收')
                 closePopover.addClass('close-popover_success').removeClass('close-popover_fail')
                 popover.css({display: 'flex'})
 
