@@ -66,7 +66,7 @@ $(function(){
                     is_new_user = data.is_new_user
                 }
                 popoverImg.attr({src : 'images/success.png'})
-                resultText.text('下载APP即刻预定')
+                resultText.text('领取成功')
                 // resultReason.text('已领取优惠券，即可进入账户查看')
                 resultReason.text('您的优惠券已兑换成功，请登录App查收')
                 closePopover.addClass('close-popover_success').removeClass('close-popover_fail')
@@ -81,7 +81,7 @@ $(function(){
                     errorMessage = JSON.parse(xhr.responseText)._error.message
                 }
                 resultReason.text(errorMessage)
-                resultText.text('下载APP即刻预定')
+                resultText.text('领取失败')
                 popoverImg.attr({src : 'images/failed.png'})
                 closePopover.addClass('close-popover_fail').removeClass('close-popover_success')
                 popover.css({display: 'flex'})
