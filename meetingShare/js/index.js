@@ -36,7 +36,7 @@ $(function () {
             var areaNameURI = encodeURIComponent(area_name)
             var addressURI =  encodeURIComponent(address)
             var addressUrl = `http://apis.map.qq.com/uri/v1/marker?marker=coord:${latitude},${longitude};title:${areaNameURI};addr:${addressURI}&referer=WStudio`
-            inviterAvatar.attr('src',host.avatar)
+            inviterAvatar.attr('src',host.avatar || 'https://media-dev-ssl.kuban.io/head.png')
             meetingTime.html(timeShow)
             inviterName.html(host.name)
             meetingName.html(area_name)
