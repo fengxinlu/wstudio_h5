@@ -25,7 +25,6 @@ $(function () {
             )
         },
         success: function (data) {
-            console.log(data)
             var host = data.host
             var area_name = data.area_name
             var address = data.area.physical_address
@@ -43,10 +42,10 @@ $(function () {
             meetingName.html(area_name)
             meetingAddress.html(address)
             addressLink.attr('href',addressUrl)
-
         }
     })
 })
+
 function getUrlParam(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
     var r = window.location.search.substr(1).match(reg);  //匹配目标参数
@@ -54,6 +53,7 @@ function getUrlParam(name) {
 }
 
 function parseDate(start_at,end_at) {
+
     var s_startAt_R = start_at.substring(0, start_at.length - 15)
     var s_startAt_Date = s_startAt_R.substring(5, s_startAt_R.length)
     var start_month = s_startAt_Date.substring(0,s_startAt_Date.length - 3) //月数
