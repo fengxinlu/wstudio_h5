@@ -1,9 +1,9 @@
 var sharing_code = getUrlParam('sharing_code')
 var campaign_id = getUrlParam('campaign_id')
 var origin_request = document.location.origin
-var sharingUrl = `${origin_request}/moc/v1/sharings`
-var campaignUrl = `${origin_request}/moc/v1/promo_codes`
-var is_new_user
+var sharingUrl = origin_request + '/moc/v1/sharings'
+var campaignUrl = origin_request + '/moc/v1/promo_codes'
+var is_new_user = ''
 
 $(function(){
     var dpr = window.devicePixelRatio
@@ -16,6 +16,7 @@ $(function(){
     var resultText = $('.result-text')
     var firstScreen = $('.firstScreen')[0]
     var nextScreen = $('#nextScreen')
+    var closePopoverBtn= $('.close-popover-btn')
     $('body').css({height: screen.height*dpr})
 
     phone.on('input',function (e) {
@@ -47,6 +48,10 @@ $(function(){
     closePopover.on('click',function(){
         popover.css({display: 'none'})
         window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=io.kuban.robinson'
+    })
+
+    closePopoverBtn.on('click',function(){
+        popover.css({display: 'none'})
     })
 
     function submitAjax(url,params){
