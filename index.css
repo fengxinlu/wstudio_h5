@@ -185,7 +185,7 @@ input:focus,input:active,input:visited,a:focus,a:active,a:visited{
     text-align: center;
 }
 .banner-img{
-    height: 5.46rem;
+    /*height: 5.46rem;*/
 }
 .banner-img img{
     width: 100%;

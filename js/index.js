@@ -17,7 +17,7 @@ $(function(){
     var firstScreen = $('.firstScreen')[0]
     var nextScreen = $('#nextScreen')
     var closePopoverBtn= $('.close-popover-btn')
-    $('body').css({height: screen.height*dpr})
+    //$('body').css({height: screen.height*dpr})
 
     phone.on('input',function (e) {
         var value = e.target.value
