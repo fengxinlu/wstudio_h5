@@ -334,6 +334,16 @@ a{
     cursor: pointer;
 }
 
+.television{
+    display: block;
+    padding: 0 10px;
+}
+
+.television img{
+    width: 100%;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 450px) {
     html{
         font-size: 16px !important;
@@ -504,5 +514,8 @@ a{
         font-size: 14px;
         padding: 10px 0;
         margin-top: 24px;
+    }
+    .television{
+        padding: 0;
     }
 }
