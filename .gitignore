@@ -11,3 +11,5 @@ work_log.txt
 test.json
 vendor.manifest.json
 /dll/*
+*.xml
+*.iml
