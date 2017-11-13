@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WStudio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="banner" style="background-color: #FFDF6B">
+        <img src="https://media-ssl.kuban.io/static/wstudio/1810.jpg?imageslim" alt="banner">
+    </div>
+    <div class="receive-coupon">
+        <div class="receive-content">
+            <input placeholder="输入手机号" class="phone-input" type="number"/>
+            <div class="get-btn">领取优惠券</div>
+        </div>
+    </div>
+    <div class="block-add">
+        <span>WStudio为你提供</span>
+    </div>
+    <div class="service-introduce">
+        <div class="service-one">
+            <img src="https://media-dev-ssl.kuban.io/WStudio_share/service-5.jpg?imageslim" alt="img">
+        </div>
+        <div class="service-two">
+            <img src="https://media-dev-ssl.kuban.io/WStudio_share/service-6.jpg?imageslim" alt="img">
+        </div>
+        <div class="service-three">
+            <img src="https://media-dev-ssl.kuban.io/WStudio_share/service-7.jpg?imageslim" alt="img">
+        </div>
+        <div class="service-four">
+            <img src="https://media-dev-ssl.kuban.io/WStudio_share/service-8.jpg?imageslim" alt="img">
+        </div>
+        <p class="site-hint">
+            <span>最便捷的地理位置</span>
+            <span>最贴心的办公服务</span>
+            <span>最高效的办公设备</span>
+        </p>
+    </div>
+    <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3NTYyMDA0MQ==&scene=110#wechat_redirect" class="merit">
+        <img src="https://media-ssl.kuban.io/static/wstudio/wstudio_1729.png?imageslim" alt="can">
+        <div class="merit-description">
+            <span>在WStudio里你可以</span>
+            <div style="line-height: 22px">
+                上课丨教学丨移动办公丨开会丨培训丨狼人杀丨闲聊丨画画丨读书丨自习丨排练丨会客丨看电视丨过生日丨诗朗诵
+            </div>
+        </div>
+    </a>
+    <div class="about-us">
+        <div class="about-us-content">
+            <div class="about-us-title">
+                <span>关于我们</span>
+            </div>
+            <div class="about-wstudio">
+                <p>关于WStudio</p>
+                <div>
+                    WStudio隶属于无界空间，是一个线上分时预定独立空间的平台。我们在整座城市，为你订制了近百个会客间，给你高效率、智能化的移动会客体验，满足办公、会议、聚会、教学等多元场地需求。
+                </div>
+            </div>
+            <div class="about-wujie">
+                <p>关于无界空间</p>
+                <div>
+                    无界空间倡导美学办公主义，是以通过科技部备案的国家级众创空间。截止2017年6月，已有20个空间，总面积接近6万平，提供7000多个工位，服务300+企业，2017年3月宣布获由信中利资本集团、经纬中国A+轮近亿元融资。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="https://media-ssl.kuban.io/static/wstudio/wstudio_%20reserve_meeting.jpg" alt="img">
+        <p style="text-align: center;font-size: 16px">扫码预定<br/>WStudio会议室</p>
+    </div>
+    <div class="popover">
+        <div class="close-popover-btn">×</div>
+        <img class="popover-img" src="images/success.png" />
+        <span class="result-text"></span>
+        <span class="result-reason"></span>
+        <span id="close-popover">关注微信查看所有空间</span>
+    </div>
+    <script type="text/javascript">
+        var clientWidth = document.documentElement.clientWidth
+        document.documentElement.style.fontSize = clientWidth/3.75 + "px";
+        window.onresize = function(){
+            clientWidth = document.documentElement.clientWidth
+            document.documentElement.style.fontSize = clientWidth/3.75 + "px";
+        }
+    </script>
+</body>
+</html>
